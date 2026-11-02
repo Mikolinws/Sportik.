@@ -80,9 +80,9 @@ header {
     position: sticky;
     top: 0;
     z-index: 100;
-    background: rgba(16, 16, 16, .94);
-    backdrop-filter: blur(14px);
+    background: #111;
     border-bottom: 1px solid #292929;
+    backdrop-filter: none;
 }
 
 .nav {
@@ -99,17 +99,29 @@ header {
     flex-shrink: 0;
     width: auto;
     max-width: none;
+    gap: 4px;
 }
 
-/* HORIZONTAL LOGO */
+/* ОСНОВНОЙ ЛОГОТИП */
 
 .brand-logo {
     display: block;
-    width: 180px;
-    height: 60px;
-    max-width: none;
+    width: 160px;
+    height: 54px;
+    max-width: 100%;
     object-fit: contain;
     object-position: left center;
+}
+
+/* ВТОРОЙ ЛОГОТИП */
+
+.brand-logo2 {
+    display: block;
+    width: 38px;
+    height: 38px;
+    max-width: 38px;
+    object-fit: contain;
+    flex-shrink: 0;
 }
 
 .brand-mark {
@@ -904,6 +916,7 @@ section {
 .map-inner {
     position: relative;
     z-index: 1;
+    width: 100%;
 }
 
 .map-pin {
@@ -922,6 +935,56 @@ section {
     color: #aaa;
     font-size: 12px;
     line-height: 1.7;
+}
+
+/* ЧАСЫ РАБОТЫ */
+
+.hours-item {
+    align-items: flex-start;
+    margin: 22px auto;
+    max-width: 360px;
+    text-align: left;
+}
+
+.hours-content {
+    flex: 1;
+    min-width: 0;
+}
+
+.hours-content > small {
+    display: block;
+    margin-bottom: 12px;
+    color: #999;
+    font-size: 10px;
+    letter-spacing: 1.5px;
+    text-transform: uppercase;
+}
+
+.hours-list {
+    display: grid;
+    gap: 9px;
+}
+
+.hours-list > div {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 12px;
+    font-size: 12px;
+}
+
+.hours-list span {
+    color: #aaa;
+}
+
+.hours-list strong {
+    color: var(--white);
+    font-size: 12px;
+    white-space: nowrap;
+}
+
+.hours-list .day-off strong {
+    color: var(--orange);
 }
 
 /* =========================
@@ -1026,8 +1089,14 @@ footer {
     }
 
     .brand-logo {
-        width: 140px;
-        height: 48px;
+        width: 125px;
+        height: 43px;
+    }
+
+    .brand-logo2 {
+        width: 32px;
+        height: 32px;
+        max-width: 32px;
     }
 
     .menu-btn {
@@ -1170,6 +1239,7 @@ footer {
 
     .map-box {
         min-height: 260px;
+        padding: 22px 16px;
     }
 
     .footer-inner {
@@ -1198,8 +1268,14 @@ footer {
     }
 
     .brand-logo {
-        width: 120px;
-        height: 42px;
+        width: 110px;
+        height: 38px;
+    }
+
+    .brand-logo2 {
+        width: 28px;
+        height: 28px;
+        max-width: 28px;
     }
 
     h1 {
@@ -1227,6 +1303,19 @@ footer {
     .coach-track {
         grid-auto-columns: 90%;
     }
+
+    .hours-item {
+        gap: 10px;
+    }
+
+    .hours-list > div {
+        gap: 6px;
+        font-size: 11px;
+    }
+
+    .hours-list strong {
+        font-size: 11px;
+    }
 }
 
 /* =========================
@@ -1249,126 +1338,4 @@ footer {
         opacity: 1;
         transform: none;
     }
-}
-header .brand {
-    width: 260px !important;
-    flex-shrink: 0 !important;
-}
-
-header .brand-logo {
-    display: block !important;
-    width: 260px !important;
-    height: 65px !important;
-    max-width: none !important;
-    object-fit: contain !important;
-}
-/* SECONDARY LOGO */
-
-header .brand {
-    display: flex;
-    align-items: center;
-    gap: 12px;
-}
-
-header .brand-logo2 {
-    display: block;
-    width: 45px;
-    height: 45px;
-    object-fit: contain;
-    flex-shrink: 0;
-}
-
-/* MOBILE */
-
-@media (max-width: 650px) {
-    header .brand-logo2 {
-        width: 36px;
-        height: 36px;
-    }
-}
-
-@media (max-width: 380px) {
-    header .brand-logo2 {
-        width: 32px;
-        height: 32px;
-    }
-}
-header {
-    background: #111111 !important;
-    backdrop-filter: none !important;
-}
-@media (max-width: 650px) {
-    header .brand-logo2 {
-        width: 40px !important;
-        height: 40px !important;
-    }
-}
-/* =========================
-   WORKING HOURS
-========================= */
-
-.hours-item {
-    align-items: flex-start;
-}
-
-.hours-content {
-    flex: 1;
-    min-width: 0;
-}
-
-.hours-content > small {
-    display: block;
-    margin-bottom: 12px;
-    color: #999;
-    font-size: 10px;
-    letter-spacing: 1.5px;
-    text-transform: uppercase;
-}
-
-.hours-list {
-    display: grid;
-    gap: 10px;
-    max-width: 330px;
-}
-
-.hours-list div {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    gap: 12px;
-    font-size: 12px;
-}
-
-.hours-list div span {
-    color: #aaa;
-}
-
-.hours-list div strong {
-    color: #f7f7f2;
-    font-size: 12px;
-    white-space: nowrap;
-}
-
-.hours-list .day-off strong {
-    color: var(--orange);
-}
-
-@media (max-width: 380px) {
-    .hours-list div {
-        font-size: 11px;
-        gap: 8px;
-    }
-
-    .hours-list div strong {
-        font-size: 11px;
-    }
-}
-/* LOGO SPACING */
-
-header .brand {
-    gap: 4px !important;
-}
-
-header .brand-logo2 {
-    margin-left: -6px;
 }
