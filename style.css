@@ -1345,3 +1345,11 @@ footer {
         transform: none;
     }
 }
+.future-sports {
+    margin-top: 24px;
+    font-size: 14px;
+    color: #888;
+    text-align: center;
+    line-height: 1.6;
+}
+}
