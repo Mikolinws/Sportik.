@@ -1299,7 +1299,7 @@ header {
 }
 @media (max-width: 650px) {
     header .brand-logo2 {
-        width: 65px !important;
-        height: 65px !important;
+        width: 95px !important;
+        height: 95px !important;
     }
 }
