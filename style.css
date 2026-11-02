@@ -1339,3 +1339,17 @@ footer {
         transform: none;
     }
 }
+.hours-item {
+    width: 100%;
+    justify-content: flex-start;
+    text-align: left;
+}
+
+.hours-content {
+    width: 100%;
+    text-align: left;
+}
+
+.hours-list {
+    width: 100%;
+}
