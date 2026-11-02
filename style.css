@@ -1299,8 +1299,8 @@ header {
 }
 @media (max-width: 650px) {
     header .brand-logo2 {
-        width: 95px !important;
-        height: 95px !important;
+        width: 40px !important;
+        height: 40px !important;
     }
 }
 /* =========================
