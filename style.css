@@ -1303,3 +1303,72 @@ header {
         height: 95px !important;
     }
 }
+/* =========================
+   WORKING HOURS
+========================= */
+
+.hours-item {
+    align-items: flex-start;
+}
+
+.hours-content {
+    flex: 1;
+    min-width: 0;
+}
+
+.hours-content > small {
+    display: block;
+    margin-bottom: 12px;
+    color: #999;
+    font-size: 10px;
+    letter-spacing: 1.5px;
+    text-transform: uppercase;
+}
+
+.hours-list {
+    display: grid;
+    gap: 10px;
+    max-width: 330px;
+}
+
+.hours-list div {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 12px;
+    font-size: 12px;
+}
+
+.hours-list div span {
+    color: #aaa;
+}
+
+.hours-list div strong {
+    color: #f7f7f2;
+    font-size: 12px;
+    white-space: nowrap;
+}
+
+.hours-list .day-off strong {
+    color: var(--orange);
+}
+
+@media (max-width: 380px) {
+    .hours-list div {
+        font-size: 11px;
+        gap: 8px;
+    }
+
+    .hours-list div strong {
+        font-size: 11px;
+    }
+}
+/* LOGO SPACING */
+
+header .brand {
+    gap: 4px !important;
+}
+
+header .brand-logo2 {
+    margin-left: -6px;
+}
