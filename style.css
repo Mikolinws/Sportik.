@@ -940,15 +940,17 @@ section {
 /* ЧАСЫ РАБОТЫ */
 
 .hours-item {
+    display: flex;
     align-items: flex-start;
-    margin: 22px auto;
-    max-width: 360px;
+    width: 100%;
+    margin: 22px 0;
     text-align: left;
 }
 
 .hours-content {
     flex: 1;
     min-width: 0;
+    text-align: left;
 }
 
 .hours-content > small {
@@ -958,11 +960,14 @@ section {
     font-size: 10px;
     letter-spacing: 1.5px;
     text-transform: uppercase;
+    text-align: left;
 }
 
 .hours-list {
     display: grid;
+    width: 100%;
     gap: 9px;
+    text-align: left;
 }
 
 .hours-list > div {
@@ -971,6 +976,7 @@ section {
     align-items: center;
     gap: 12px;
     font-size: 12px;
+    text-align: left;
 }
 
 .hours-list span {
@@ -1338,28 +1344,4 @@ footer {
         opacity: 1;
         transform: none;
     }
-.map-inner .hours-item {
-    display: flex !important;
-    width: 100% !important;
-    max-width: 100% !important;
-    margin: 22px 0 !important;
-    justify-content: flex-start !important;
-    text-align: left !important;
-}
-
-.map-inner .hours-item .hours-content {
-    flex: 1;
-    min-width: 0;
-    text-align: left !important;
-}
-
-.map-inner .hours-item .hours-list {
-    width: 100%;
-    text-align: left !important;
-}
-
-.map-inner .hours-item .hours-list > div {
-    display: flex;
-    justify-content: space-between;
-    text-align: left !important;
 }
