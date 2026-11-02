@@ -1338,18 +1338,28 @@ footer {
         opacity: 1;
         transform: none;
     }
-}
-.hours-item {
-    width: 100%;
-    justify-content: flex-start;
-    text-align: left;
-}
-
-.hours-content {
-    width: 100%;
-    text-align: left;
+.map-inner .hours-item {
+    display: flex !important;
+    width: 100% !important;
+    max-width: 100% !important;
+    margin: 22px 0 !important;
+    justify-content: flex-start !important;
+    text-align: left !important;
 }
 
-.hours-list {
+.map-inner .hours-item .hours-content {
+    flex: 1;
+    min-width: 0;
+    text-align: left !important;
+}
+
+.map-inner .hours-item .hours-list {
     width: 100%;
+    text-align: left !important;
+}
+
+.map-inner .hours-item .hours-list > div {
+    display: flex;
+    justify-content: space-between;
+    text-align: left !important;
 }
